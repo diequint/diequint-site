@@ -1,0 +1,90 @@
+/* Reseteo de márgenes y padding */
+body {
+	margin: 0;
+	padding: 30px;
+	font-family: 'Roboto', sans-serif;
+	background: linear-gradient(120deg, #0044cc, #60b3ff);
+	color: white;
+}
+
+
+/* Estilos para el menú */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .left {
+	flex: 1;
+}
+
+nav .right {
+	display: flex;
+	gap: 30px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+nav .flag {
+	width: 20px;
+}
+
+
+/* Estilos para los títulos y párrafos*/
+h1 {
+	font-size: 2.5em;
+	font-weight: bold;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+p, nav {
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+.regard {
+	transform: translateY(-40px);
+	padding: 30px 0;
+}
+
+/* Estilos para el footer */
+.copyleft {
+	display:inline-block;
+	transform: rotate(180deg);
+}
+
+/* Imágenes */
+.image-container {
+	display: flex;
+	margin-left: auto;
+	width: 40%;
+	transform: translate(-30px, -80px);
+}
+
+.image-container img {
+	width: 100%;
+	height: auto;
+	justify-content: center;
+}
+
+@media (max-width: 768px) {
+	.image-container {
+		width: 60%;
+		margin: auto;
+		transform: none;
+	}
+
+	.regard {
+		transform: none;
+	}
+}
